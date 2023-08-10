@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Book Reviews</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
-
+    <script src="//unpkg.com/alpinejs" defer></script>
     {{-- blade-formatter-disable --}}
     <style type="text/tailwindcss">
         .btn {
@@ -48,6 +48,10 @@
             @apply text-xs text-slate-500;
         }
 
+        textarea{
+            @apply input mb-4;
+        }
+
         .empty-book-item {
             @apply text-sm rounded-md bg-white py-10 px-4 text-center leading-6 text-slate-900 shadow-md shadow-black/5 ring-1 ring-slate-700/10;
         }
@@ -59,11 +63,34 @@
         .reset-link {
             @apply text-slate-500 underline;
         }
+        .error{
+            @apply text-red-500 text-sm
+        }
     </style>
     {{-- blade-formatter-enable --}}
 </head>
 
 <body class="container mx-auto mt-10 mb-10 max-w-3xl">
+<div x-data="{flash: true}">
+    @if(session()->has('success'))
+        <div x-show="flash"
+             class="relative mb-10 rounded border border-green-400 bg-green-100 px-4 py-3 text-lg text-green-700"
+             role="alert">
+            <strong class="font-bold">Success!</strong>
+            <div>
+                {{session('success')}}
+            </div>
+
+            <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+               stroke-width="1.5" @click="flash = false"
+               stroke="currentColor" class="h-6 w-6 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </span>
+        </div>
+@endif
+</div>
 @yield('content')
 </body>
 
