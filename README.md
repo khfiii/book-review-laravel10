@@ -53,9 +53,13 @@ php artisan migrate
 
 after migration command select yes option to create database schema
 
-    
+## Main page
 <img src="https://github.com/Yessenali-Yerkebulan/book-review-laravel10/assets/113698340/ccfbfa03-3f44-4cf8-bfb3-54d0893832b1">
+
+## Single Book page
 <img src="https://github.com/Yessenali-Yerkebulan/book-review-laravel10/assets/113698340/028d2638-e9f1-4584-b2f3-cf3e8cf06a6c">
+
+## Add Review page
 <img src="https://github.com/Yessenali-Yerkebulan/book-review-laravel10/assets/113698340/5a880b2c-e765-4f1b-86cf-0be8f1bfb676">
 
 
