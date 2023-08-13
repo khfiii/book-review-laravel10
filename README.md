@@ -35,7 +35,7 @@ git clone https://github.com/Yessenali-Yerkebulan/book-review-laravel10.git
 
 ```
 
-Go inside project directory 
+Go inside project directory:
 
 ```sh
 
