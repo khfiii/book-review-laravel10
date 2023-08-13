@@ -25,7 +25,7 @@ Application to add Review to the book and show rating
     <li>Resource Controller</li>
     <li>Component</li>
 </ul>
-To setup project run in cli:
+To setup project run in CLI:
 
 Clone Project:
 
