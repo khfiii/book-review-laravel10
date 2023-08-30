@@ -69,6 +69,14 @@ php artisan migrate
 
 after migration command select yes option to create database schema
 
+run application:
+
+```sh
+
+php artisan serve
+
+```
+
 ## Main page
 <img src="https://github.com/Yessenali-Yerkebulan/book-review-laravel10/assets/113698340/ccfbfa03-3f44-4cf8-bfb3-54d0893832b1">
 
